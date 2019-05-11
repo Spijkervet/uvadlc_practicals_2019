@@ -86,8 +86,8 @@ def main():
         datasets.MNIST('./data/mnist', train=True, download=True,
                        transform=transforms.Compose([
                            transforms.ToTensor(),
-                           transforms.Normalize((0.5, 0.5, 0.5),
-                                                (0.5, 0.5, 0.5))])),
+                           transforms.Normalize((0.5,),
+                                                (0.5,))])),
         batch_size=args.batch_size, shuffle=True)
 
     # Initialize models and optimizers
